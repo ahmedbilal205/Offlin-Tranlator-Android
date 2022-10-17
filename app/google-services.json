@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "706940185373",
+    "project_id": "audiotranslator-test",
+    "storage_bucket": "audiotranslator-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706940185373:android:b4a1d906579853057ccff4",
+        "android_client_info": {
+          "package_name": "com.maximus.audiotranslatortest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706940185373-4lphiqd7ld2joq39bioo573ncbseah3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1jMf8CvhFX8s_TgP8UdQ-hRLheAonffQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706940185373-4lphiqd7ld2joq39bioo573ncbseah3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

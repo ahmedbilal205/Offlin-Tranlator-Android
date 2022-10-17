@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/navSavedItems"
+        android:title="Saved Items" />
+
+    <item
+        android:id="@+id/nav_history"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navFeedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/navShare"
+        android:title="Share App" />
+    <item
+        android:id="@+id/navTermsAndPrivacy"
+        android:title="Term and Privacy" />
+
+    <item
+        android:id="@+id/navRateUs"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/navMoreApps"
+        android:title="More Apps (AD)" />
+
+    <item
+        android:id="@+id/navQuit"
+        android:title="Quit" />
+
+</menu>

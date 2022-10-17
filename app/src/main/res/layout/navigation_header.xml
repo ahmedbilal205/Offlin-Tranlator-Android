@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:translationZ="@dimen/_8sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/navDownloadLang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/download_languages"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:drawableLeftCompat="@drawable/ic_cloud_download" />
+
+            <TextView
+                android:id="@+id/navHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/history"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:drawableLeftCompat="@drawable/ic_history"
+                app:drawableTint="@color/color_primary" />
+
+            <TextView
+                android:id="@+id/navShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/share_app"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:drawableLeftCompat="@drawable/ic_share" />
+            <TextView
+                android:id="@+id/navTermsAndPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/terms_and_privacy"
+                android:textAlignment="textStart"
+                app:drawableLeftCompat="@drawable/ic_privacy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/navRateUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/rate_us"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal"
+                app:drawableLeftCompat="@drawable/ic_rate" />
+
+        </LinearLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/appVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="V: 1.0.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

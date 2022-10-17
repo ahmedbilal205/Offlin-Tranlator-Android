@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Offline Translator</string>
+    <string name="audio_translator"> <font color='#4DB5FF'>OFFLINE</font>  <font color='#53565C'>TRANSLATOR</font></string>
+    <string name="txt_hint">Write text to translate.</string>
+    <string name="tranlating">Translating..</string>
+    <string name="download_languages">Download Languages</string>
+    <string name="translated_text">Translated Text</string>
+    <string name="history">History</string>
+    <string name="do_you_want_to_delete">Do you want to delete?</string>
+    <string name="select">Select</string>
+    <string name="quit">Quit</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="terms_and_privacy">Terms and Privacy</string>
+    <string name="translate">Translate</string>
+    <string name="language_translator">Language Translator</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="privacypolicy">PRIVACY POLICY </string>
+    <string name="privacypolicy2">Built the Offline Translator app as an Ad Supported app. This SERVICE is provided by at no cost and is intended for use as is.
+    </string>
+    <string name="privacypolicy3">
+    Information Collection and Use
+    </string>
+    <string name="privacypolicy4">
+    For a better experience, while using our Service, I may collect some user analytic data and I may also require you to provide us with certain personally identifiable information. That information maybe used to improve user experience
+The app also uses third party services that may collect information used to identify you.
+    </string>
+
+    <string name="privacypolicy5">
+    Name of the third party service providers used by the app
+
+    1)Google Play Services\n
+    2)AdMob\n
+    3)Meta Audience Network
+
+    </string>
+    <string name="privacypolicy6">
+Links to Other Sites
+    </string>
+    <string name="privacypolicy7">
+    This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+    </string>
+    <string name="privacypolicy8">
+    Changes to This Privacy Policy
+    </string>
+    <string name="privacypolicy9">
+I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+    </string>
+    <string name="privacypolicy10">
+    Contact Us
+    </string>
+
+    <string name="privacypolicy11">
+    For privacy policy related inquiries you can contact me at anbdevelopers.apps@gmail.com</string>
+    <string name="anb_email">anbdevelopers.apps@gmail.com</string>
+    <string name="translation">Translation</string>
+</resources>
