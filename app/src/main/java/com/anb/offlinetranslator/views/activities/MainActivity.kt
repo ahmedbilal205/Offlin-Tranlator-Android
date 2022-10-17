@@ -189,10 +189,6 @@ class MainActivity : AppCompatActivity(), SelectLanguageFragment.LangSelectedCal
         langFromA =    LanguageItem("ENGLISH","en","gb")
         dashBinding.langFromTv.text = langFromA.name.lowercase()
             .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }
-
-//        langToA =    LanguageItem("SPANISH","es","es")
-//        dashBinding.langToTv.text = langToA.name.lowercase()
-//            .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }
     }
     private fun switchLangs(){
         if (::langFromA.isInitialized
