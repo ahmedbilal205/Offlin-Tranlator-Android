@@ -57,14 +57,15 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/langFromCard"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/light_grey"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/color_primary"
         app:cardCornerRadius="@dimen/_20sdp"
         app:layout_constraintEnd_toStartOf="@+id/switchLangs"
         app:layout_constraintHorizontal_bias="0.5"
@@ -98,15 +99,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/langToCard"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/light_grey"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/color_primary"
         app:cardCornerRadius="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="@+id/langFromCard"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,7 +142,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
     <ImageView
         android:id="@+id/switchLangs"
