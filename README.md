@@ -20,5 +20,7 @@ Screenshots
   <img src="https://play-lh.googleusercontent.com/or_x5xNi1De35aLT_qpHEFEoFvjuhDG05WoEint5sUH1byKctuWFTMNaDD84mwmtb-rN=w5120-h2880" width="350" >
 
 TODO
+
 Add Speach to Text and Text to speech
+
 Add OCR to scan text
