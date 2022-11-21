@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "706940185373",
-    "project_id": "audiotranslator-test",
-    "storage_bucket": "audiotranslator-test.appspot.com"
+    "project_number": "539859861477",
+    "project_id": "offline-translator-ca96f",
+    "storage_bucket": "offline-translator-ca96f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:706940185373:android:b4a1d906579853057ccff4",
+        "mobilesdk_app_id": "1:539859861477:android:7dbb70f37216fdd04ef90c",
         "android_client_info": {
-          "package_name": "com.maximus.audiotranslatortest"
+          "package_name": "com.anb.offlinetranslator"
         }
       },
       "oauth_client": [
         {
-          "client_id": "706940185373-4lphiqd7ld2joq39bioo573ncbseah3k.apps.googleusercontent.com",
+          "client_id": "539859861477-ovoilg7m9ac12kc0i1mkairg9vc51jjq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD1jMf8CvhFX8s_TgP8UdQ-hRLheAonffQ"
+          "current_key": "AIzaSyDUDCB2O_Ea6jL3imbxowO1EXs9cmrmSyI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "706940185373-4lphiqd7ld2joq39bioo573ncbseah3k.apps.googleusercontent.com",
+              "client_id": "539859861477-ovoilg7m9ac12kc0i1mkairg9vc51jjq.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

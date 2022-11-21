@@ -23,8 +23,17 @@ import com.anb.offlinetranslator.utils.AppConfig
 import com.anb.offlinetranslator.utils.TinyDB
 import com.anb.offlinetranslator.utils.Utils
 
-class SelectLanguageFragment(private val status: String, private val langSelectedCallback: LangSelectedCallback)
+class SelectLanguageFragment()
     : Fragment(), LanguagesAdapter.OnLangClicked {
+
+    private var status: String = ""
+    private var langSelectedCallback: LangSelectedCallback? = null
+
+    constructor(status: String, langSelectedCallback: LangSelectedCallback) : this() {
+        this.status =status
+        this.langSelectedCallback = langSelectedCallback
+    }
+
     private val TAG = "SelectLanguageFragment"
     lateinit var binding: FragmentSelectLanguageBinding
     lateinit var languagesAdapter : LanguagesAdapter
@@ -131,10 +140,10 @@ class SelectLanguageFragment(private val status: String, private val langSelecte
 
     override fun onLangClicked(lang: LanguageItem) {
         if (status=="to"){
-            langSelectedCallback.langTo(lang)
+            langSelectedCallback?.langTo(lang)
             activity?.onBackPressed()
         }else {
-            langSelectedCallback.langFrom(lang)
+            langSelectedCallback?.langFrom(lang)
             activity?.onBackPressed()
         }
     }

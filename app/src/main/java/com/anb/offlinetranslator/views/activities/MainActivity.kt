@@ -7,6 +7,7 @@ import android.content.IntentFilter
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.speech.RecognizerIntent
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -45,6 +46,8 @@ class MainActivity : AppCompatActivity(), SelectLanguageFragment.LangSelectedCal
     lateinit var tinyDB: TinyDB
     private val TAG = "TextTranslator"
     var bundle: Bundle? = Bundle()
+    private val REQUEST_CODE_SPEECH_INPUT = 1
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -130,9 +133,31 @@ class MainActivity : AppCompatActivity(), SelectLanguageFragment.LangSelectedCal
                     .add(selectLanguageFrame.id,
                         FullScreenFragment(translateOutputTv.text.toString())).commit()
             }
+            speechBtn.setOnClickListener { initSpeechToTxt() }
         }
+
         translateTextWatcher()
     }
+
+    private fun initSpeechToTxt() {
+        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)
+
+        intent.putExtra(
+            RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+            RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+        )
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, langFromA.code)
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak to text")
+        try {
+            startActivityForResult(intent, REQUEST_CODE_SPEECH_INPUT)
+        } catch (e: Exception) {
+            Toast.makeText(
+                    this@MainActivity, "Error, check connection\nOnly text translations work offline" + e.message,
+                    Toast.LENGTH_SHORT
+                ).show()
+        }
+    }
+
     private fun translateTextWatcher() {
         dashBinding.translateEdt.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
@@ -321,6 +346,15 @@ class MainActivity : AppCompatActivity(), SelectLanguageFragment.LangSelectedCal
         override fun onReceive(context: Context, intent: Intent) {
                 Toast.makeText(this@MainActivity, "Downloaded: "
                         +intent.getStringExtra("lang"), Toast.LENGTH_SHORT).show()
+        }
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_CODE_SPEECH_INPUT) {
+            if (resultCode == RESULT_OK && data != null) {
+                val res: ArrayList<String> = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS) as ArrayList<String>
+                dashBinding.translateEdt.append( " "+Objects.requireNonNull(res)[0])
+            }
         }
     }
 }
