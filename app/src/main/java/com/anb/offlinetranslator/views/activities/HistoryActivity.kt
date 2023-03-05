@@ -26,7 +26,9 @@ class HistoryActivity : AppCompatActivity() {
     }
     private fun initViews() {
         binding.icBack.setOnClickListener {onBackPressed()}
-        val txtHist = tinyDB.getListObject(AppConfig.TEXT_HISTORY, HistoryItem::class.java) as List<HistoryItem>
+
+        val txtHist =( tinyDB.getListObject(AppConfig.TEXT_HISTORY, HistoryItem::class.java) as List<HistoryItem>).reversed()
+
         textHistoryAdapter = TextHistoryAdapter(txtHist,this)
         binding.txtHistoryRecycler.layoutManager = LinearLayoutManager(this)
         binding.txtHistoryRecycler.adapter = textHistoryAdapter

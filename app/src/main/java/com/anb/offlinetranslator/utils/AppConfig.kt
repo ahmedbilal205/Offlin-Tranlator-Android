@@ -8,4 +8,5 @@ object AppConfig {
         const val DOWNLOADED_LANGS = "downloaded_langs"
         const val TEXT_HISTORY = "text_history"
         const val PACKAGE_NAME = BuildConfig.APPLICATION_ID;
+        const val APP_OPEN = "app_open"
 }

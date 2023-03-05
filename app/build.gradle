@@ -12,8 +12,8 @@ android {
         applicationId "com.anb.offlinetranslator"
         minSdk 23
         targetSdk 33
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 10
+        versionName "1.0.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -41,8 +41,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.5'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+    implementation 'com.google.firebase:firebase-config:21.2.1'
     testImplementation 'junit:junit:4.13.2'
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
@@ -55,4 +56,14 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4'
     implementation "androidx.work:work-runtime-ktx:2.7.1"
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'com.google.android.gms:play-services-ads:21.5.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+
 }

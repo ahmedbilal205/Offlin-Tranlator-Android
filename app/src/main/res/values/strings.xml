@@ -55,4 +55,6 @@ I may update our Privacy Policy from time to time. Thus, you are advised to revi
     For privacy policy related inquiries you can contact me at anbdevelopers.apps@gmail.com</string>
     <string name="anb_email">anbdevelopers.apps@gmail.com</string>
     <string name="translation">Translation</string>
+    <string name="start">Start</string>
+    <string name="loading_speech">Loading Speech</string>
 </resources>

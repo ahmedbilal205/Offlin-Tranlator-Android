@@ -5,6 +5,8 @@ class LanguagesList {
         //languages supported with mlkit
         var languages :ArrayList<LanguageItem> = arrayListOf(
 //            LanguageItem("AUTO DETECT","auto","AQ"),
+            LanguageItem("ENGLISH","en","gb"),
+            LanguageItem("SPANISH","es","es"),
             LanguageItem("AFRIKAANS","af","za"),
             LanguageItem("ARABIC","ar","sa"),
 
@@ -16,7 +18,6 @@ class LanguagesList {
             LanguageItem("CZECH","cs","cz"),
             LanguageItem("DANISH","da","dk"),
             LanguageItem("DUTCH","nl","nl"),
-            LanguageItem("ENGLISH","en","gb"),
             LanguageItem("ESTONIAN","et","ee"),
 //            LanguageItem("FILIPINO","tl","ph"),
             LanguageItem("FINNISH","fi","FI"),
@@ -52,7 +53,7 @@ class LanguagesList {
 //            LanguageItem("SERBIAN","sr","rs"),
             LanguageItem("SLOVAK","sk","sk"),
             LanguageItem("SLOVENIAN","sl","SI"),
-            LanguageItem("SPANISH","es","es"),
+
             LanguageItem("SWAHILI","sw","tz"),
             LanguageItem("SWEDISH","sv","se"),
             LanguageItem("TAMIL","ta","in"),

@@ -58,6 +58,7 @@ class LanguagesAdapter(private var mList: List<LanguageItem>, val context: Conte
                     holder.downloadedCheck.setImageResource(R.drawable.progress_animation)
                     it.isClickable = false
                     startDownloading(itemsViewModel.code,itemsViewModel.name)
+                    onLangClicked.onLangClicked(itemsViewModel)
                 }
             }else{
                 onLangClicked.onLangClicked(itemsViewModel)

@@ -9,9 +9,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
 
     <application
+        android:name=".appOpenAd.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,6 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AudioTranslator"
         tools:targetApi="31">
+
         <activity
             android:name="com.anb.offlinetranslator.views.activities.PrivacyPolicyActivity"
             android:screenOrientation="portrait"
@@ -29,6 +32,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:theme="@style/AdTheme"
+            tools:replace="android:theme"/>
         <activity
             android:name="com.anb.offlinetranslator.views.activities.HistoryActivity"
             android:exported="false"
@@ -63,6 +70,13 @@
         <meta-data
             android:name="com.google.mlkit.translate.DEPENDENCIES"
             android:value="en,ar,es,zh,ur" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1067149317863301~3001349730"/>
     </application>
-
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
 </manifest>

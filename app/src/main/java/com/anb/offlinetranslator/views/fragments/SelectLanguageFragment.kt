@@ -86,14 +86,13 @@ class SelectLanguageFragment()
 
     private fun initRecentlyUsed() {
         val recentlyUsed = ArrayList<LanguageItem>()
-
         try {
             recentlyUsed.add(tinyDB.getObject(AppConfig.RECENTLY_USED_FIRST,LanguageItem::class.java))
             recentlyUsed.add(tinyDB.getObject(AppConfig.RECENTLY_USED_SECOND,LanguageItem::class.java))
             recentlyUsedAdapter = LanguagesAdapter(recentlyUsed,context,this)
             binding.recentlyUsedRecycler.layoutManager= LinearLayoutManager(activity)
             binding.recentlyUsedRecycler.adapter = recentlyUsedAdapter
-        }catch (e: Exception){
+        }catch (ignored: Exception){
             binding.recentlyUsedLayout.visibility =View.GONE
         }
     }
