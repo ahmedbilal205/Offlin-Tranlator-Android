@@ -21,6 +21,6 @@ Screenshots
 
 TODO
 
-Add Speach to Text and Text to speech
+Add Text to speech
 
 Add OCR to scan text
